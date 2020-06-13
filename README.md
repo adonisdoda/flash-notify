@@ -40,7 +40,9 @@ export default OtherComponent = () => {
 
     return (
         <View>
-            <TouchableOpacity onPress={() => showFlash({ type: 'NEUTRAL', desc: 'Created by Adonis <3', title: 'Flash Message' })}>
+            <TouchableOpacity onPress={() =>
+             showFlash({ type: 'NEUTRAL', desc: 'Created by Adonis <3', title: 'Flash Message' }) 
+             }>
                 <Text>Desenvolvendo um componente para teste</Text>
             </TouchableOpacity>
         </View>
