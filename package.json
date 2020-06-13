@@ -1,0 +1,15 @@
+{
+  "name": "message-flash",
+  "version": "1.0.0",
+  "description": "Flash Message",
+  "main": "index.js",
+  "license": "MIT",
+  "peerDependencies": {
+    "prop-types": "^15.0 || ^16.0",
+    "react": "*",
+    "react-native": "*"
+  },
+  "dependencies": {
+    "expo-linear-gradient": "^8.1.0"
+  }
+}
