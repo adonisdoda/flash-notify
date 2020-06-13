@@ -1,7 +1,7 @@
 {
-  "name": "message-flash",
+  "name": "flash-notify",
   "version": "1.0.0",
-  "description": "Flash Message",
+  "description": "Flash Notify",
   "main": "index.js",
   "license": "MIT",
   "peerDependencies": {
