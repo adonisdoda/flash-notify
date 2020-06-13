@@ -12,7 +12,7 @@ yarn add flash-notify
 
 ## Usage
 
-```react
+```javascript
 import React, { Component } from "react";
 import OtherComponent from "./src";
 import FlashComponent from 'flash-notify'
