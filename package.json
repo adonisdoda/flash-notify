@@ -1,8 +1,19 @@
 {
   "name": "flash-notify",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Flash Notify",
   "main": "index.js",
+  "repository": "https://github.com/adonisdoda/flash-notify",
+  "author": {
+    "name": "Adonis A Uessler"
+  },
+  "keywords": [
+    "react-native",
+    "mobile",
+    "flash-message",
+    "expo",
+    "component"
+  ],
   "license": "MIT",
   "peerDependencies": {
     "prop-types": "^15.0 || ^16.0",
