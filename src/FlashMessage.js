@@ -12,7 +12,7 @@ export default FlashMessage = () => {
     const [positionAnim] = useState(new Animated.Value(DistanceToBottom))
 
 
-    EventEmitter.listen('SHOW_FLASH', ({ type, title, desc }) => {
+    EventEmitter.listen('SHOW_FLASH', ({ type = 'NEUTRAL', title, desc }) => {
         setNotify({ title: title, desc: desc, colorType: colors[type] })
         showModal()
     })
