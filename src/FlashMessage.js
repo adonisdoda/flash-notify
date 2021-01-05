@@ -27,14 +27,16 @@ export default FlashMessage = () => {
     const upAnimation = () => {
         Animated.timing(positionAnim, {
             toValue: 0,
-            easing: Easing.back()
+            easing: Easing.back(),
+            useNativeDriver: false
         }).start();
     }
 
     const downAnimation = () => {
         Animated.timing(positionAnim, {
             toValue: DistanceToBottom,
-            easing: Easing.elastic()
+            easing: Easing.elastic(),
+            useNativeDriver: false
         }).start();
     }
 
