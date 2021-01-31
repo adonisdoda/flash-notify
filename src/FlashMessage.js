@@ -12,8 +12,14 @@ export default FlashMessage = () => {
     const [positionAnim] = useState(new Animated.Value(DistanceToBottom))
 
 
-    EventEmitter.listen('SHOW_FLASH', ({ type = 'NEUTRAL', title, desc }) => {
-        setNotify({ title: title, desc: desc, colorType: colors[type] })
+    EventEmitter.listen('SHOW_FLASH', ({ type = 'NEUTRAL', title, desc, customColors = null }) => {
+
+        if (customColor !== null) {
+            setNotify({ title: title, desc: desc, colorType: customColors })
+        } else {
+            setNotify({ title: title, desc: desc, colorType: colors[type] })
+        }
+
         showModal()
     })
 
@@ -21,7 +27,7 @@ export default FlashMessage = () => {
         upAnimation()
         setTimeout(() => {
             downAnimation()
-        }, 4500)
+        }, 4000)
     }
 
     const upAnimation = () => {
@@ -117,4 +123,5 @@ const colors = {
     DANGER: ['#e35f5b', '#e6504b'],
     NEUTRAL: ['#454545', '#3f3f3f'],
     WARNING: ['#f1d956', '#f0d43e'],
+    SUCCESS: ['#00DE6A', '#00D264']
 }
