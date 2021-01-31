@@ -12,9 +12,9 @@ export default FlashMessage = () => {
     const [positionAnim] = useState(new Animated.Value(DistanceToBottom))
 
 
-    EventEmitter.listen('SHOW_FLASH', ({ type = 'NEUTRAL', title, desc, customColors = null }) => {
+    EventEmitter.listen('SHOW_FLASH', ({ type = 'NEUTRAL', title, desc, customColors }) => {
 
-        if (customColor !== null) {
+        if (customColors !== null) {
             setNotify({ title: title, desc: desc, colorType: customColors })
         } else {
             setNotify({ title: title, desc: desc, colorType: colors[type] })
