@@ -9,7 +9,7 @@ import FlashMessageComponent, { EventEmitter } from './src/FlashMessage'
  * @param {Array} [options.customColors] - 2 Custom Colors For Flash Notify
  */
 
-const showFlash = ({ type, title, desc, customColors }) => EventEmitter.emit('SHOW_FLASH', { type, title, desc, customColors })
+const showFlash = ({ type, title, desc, customColors = null }) => EventEmitter.emit('SHOW_FLASH', { type, title, desc, customColors })
 
 export { showFlash };
 
