@@ -1,7 +1,7 @@
 {
   "name": "flash-notify",
   "version": "1.1.5",
-  "description": "Flash Notify",
+  "description": "React Native Flash Notify Bar",
   "main": "index.js",
   "repository": "https://github.com/adonisdoda/flash-notify",
   "author": {
@@ -12,7 +12,22 @@
     "mobile",
     "flash-message",
     "expo",
-    "component"
+    "component",
+    "react",
+    "react-component",
+    "native",
+    "component",
+    "flash",
+    "flashbar",
+    "flashnotify",
+    "message",
+    "alert",
+    "notification",
+    "topbar",
+    "iphonex",
+    "ipad",
+    "android",
+    "utility"
   ],
   "license": "MIT",
   "peerDependencies": {
