@@ -23,14 +23,14 @@ export default FlashMessage = () => {
         showModal()
     })
 
-    const showModal = () => {
+    function showModal() {
         upAnimation()
         setTimeout(() => {
             downAnimation()
         }, 4000)
     }
 
-    const upAnimation = () => {
+    function upAnimation() {
         Animated.timing(positionAnim, {
             toValue: 0,
             easing: Easing.back(),
@@ -38,7 +38,7 @@ export default FlashMessage = () => {
         }).start();
     }
 
-    const downAnimation = () => {
+    function downAnimation() {
         Animated.timing(positionAnim, {
             toValue: DistanceToBottom,
             easing: Easing.elastic(),
@@ -106,8 +106,8 @@ const styles = StyleSheet.create({
     title_text: {
         color: '#fff',
         fontSize: 13,
-        fontWeight: "bold",
         alignSelf: "flex-start",
+        fontFamily: 'Nunito_Bold, tahoma, verdana, arial, sans- serif',
         letterSpacing: 0.2
     },
     desc_text: {
@@ -115,6 +115,7 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: "normal",
         alignSelf: "flex-start",
+        fontFamily: 'Nunito_Light, tahoma, verdana, arial, sans- serif',
         letterSpacing: 0.2
     }
 });
