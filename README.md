@@ -1,6 +1,6 @@
 # Flash Notify
 
-Easy and simple flash notify for React Native...
+Easy and simple flash notify for React Native with less than 10KB...
 
 ## Installation
 
