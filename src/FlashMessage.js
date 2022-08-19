@@ -106,8 +106,8 @@ const styles = StyleSheet.create({
     title_text: {
         color: '#fff',
         fontSize: 13,
+        fontWeight: "bold",
         alignSelf: "flex-start",
-        fontFamily: 'Nunito_Bold, tahoma, verdana, arial, sans- serif',
         letterSpacing: 0.2
     },
     desc_text: {
@@ -115,7 +115,6 @@ const styles = StyleSheet.create({
         fontSize: 14,
         fontWeight: "normal",
         alignSelf: "flex-start",
-        fontFamily: 'Nunito_Light, tahoma, verdana, arial, sans- serif',
         letterSpacing: 0.2
     }
 });
