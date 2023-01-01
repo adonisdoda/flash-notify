@@ -111,7 +111,7 @@ const styles = StyleSheet.create({
         letterSpacing: 0.2
     },
     desc_text: {
-        color: '#ffff',
+        color: '#fff',
         fontSize: 14,
         fontWeight: "normal",
         alignSelf: "flex-start",
@@ -121,7 +121,7 @@ const styles = StyleSheet.create({
 
 const colors = {
     DANGER: ['#e35f5b', '#e6504b'],
-    NEUTRAL: ['#454545', '#3f3f3f'],
+    NEUTRAL: ['#8D8D8D', '#7D7D7D'],
     WARNING: ['#f1d956', '#f0d43e'],
-    SUCCESS: ['#00DE6A', '#00D264']
+    SUCCESS: ['#A8DA56', '#93CA3A']
 }
